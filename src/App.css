@@ -1,0 +1,128 @@
+#root {
+  max-width: 1280px;
+  margin: 0 auto;
+  padding: 2rem;
+  text-align: center;
+}
+.logo {
+  height: 6em;
+  padding: 1.5em;
+  will-change: filter;
+  transition: filter 300ms;}
+
+@keyframes logo-spin {
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(360deg);
+  }
+}
+
+@media (prefers-reduced-motion: no-preference) {
+  a:nth-of-type(2) .logo {
+    animation: logo-spin infinite 20s linear;
+  }
+}
+
+.card {
+  padding: 2em;
+}
+
+section {
+  padding: 20px;
+  margin: 20px 0;
+}
+.services, .about-us, .contact, .testimonials {
+  background-color: #fff;
+  border: 1px solid #ddd;
+  padding: 20px;
+  margin: 20px 0;
+}
+
+h1{
+  font-family: "Roboto Slab", serif;
+  font-weight: 800;
+}
+
+h2 {
+  color: #333;
+}
+
+.welcome {
+  text-align: center;
+  background-color: #f0f0f0;
+}
+
+.logo {
+  width: 100px;
+}
+
+ul {
+  list-style-type: disc;
+  padding-left: 20px;
+}
+
+.read-the-docs {
+  padding: 20px;
+  background-color: #f9f9f9;
+  border-radius: 8px;
+  margin-top: 20px;
+}
+
+blockquote {
+  font-style: italic;
+  margin: 10px 0;
+}
+
+nav ul {
+  list-style-type: none;
+  display: flex;
+  justify-content: space-around;
+  padding: 0;
+  background-color: #333;
+}
+
+/* App.css */
+
+nav {
+  background-color: #333;
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;      /* Full width */
+  height: 60px;     /* Fixed height */
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  z-index: 1000;    /* Ensure it stays on top of the page content */
+}
+
+nav ul {
+  list-style-type: none;
+  display: flex;
+  gap: 20px;
+  margin: 0;
+  padding: 0;
+}
+
+nav ul li {
+  margin: 0;
+}
+
+nav ul li a {
+  color: white;
+  text-decoration: none;
+  padding: 15px 20px;  /* Ensures the links have some padding */
+  font-size: 18px;      /* Increase text size */
+}
+
+nav ul li a:hover {
+  background-color: #555;
+  border-radius: 4px;
+}
+
+/* Add padding to the top of the main content to avoid overlap with the fixed nav */
+main {
+  padding-top: 80px;   /* The padding should be slightly more than the nav height */
+}
